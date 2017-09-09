@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>login form</title>
+
+</head>
+
+<body>
+
+<form name="registration" action="/address/address/address.sever" method="post">
+  <!--form tag 안에, 아래의 태그들이 들어가 있다. form태그안에 들어있는 정보들을 서버로 전송하는 연할을 한다-->
+  <!--form action="서버주소"-->
+  <!--post로 웹서버로 데이터를 보냄-->
+  <!--fsdaf-->
+<h1>login form 만들기</h1>
+<br>
+<h2>ID : </h2> <input size="30" placeholder="ID"></input>
+<h2>Passwords</h2> <input type="password" size="30" placeholder="Passwords"></input>
+<!--무엇인가 태그를 닫을 때에 <tag> </tag>를 해도 되지만 <tag command="type" />를 해도 된다-->
+<!--type="password"를 하면 타이핑하는 글씨가 보이는 것이 아니라 패스워드 입력모드가 된다-->
+<h3>3</h3>
+<!--h1, h2, h3는 개행하는 속성이 있어서 사용하면 줄이 바뀐다. 이걸 해결하려면 다른 태그를 사용하면 된다-->
+<h2>직업을 입력해주세요 &nbsp;</h2>
+<br>
+<!--띄어쓰기를 하고 싶을 때에는 텍스트 뒤에 &nbsp;를 넣으면 된다. 태그 안에 넣으면 안된다-->
+<input type="checkbox" checked></input>
+<label>&nbsp;회사원</label>
+<br>
+<input type="checkbox"></input>
+<label>&nbsp;학생</label>
+<br>
+<input type="checkbox"></input>
+<label>&nbsp;주부</label>
+<br>
+<br>
+<h2>결혼유무선택</h2>
+<input type="radio" name="a" value="married" checked><label>기혼</label>
+<input type="radio" name="a" value="single"><label>미혼</label>
+<!--name="같은 이름"을 넣으면 하나의 그룹으로 인식하기에 하나만 선택할 수 있게 된다"-->
+<!--checked 속성을 입력하면 미리 하나의 속성이 선택된 상태로 시작할 수 있다-->
+<br>
+<br>
+<br>
+<input type="hidden" name="hidden_form"></input><!--숨겨진 폼-->
+
+<div>생년월일 입력</div>
+<select name="birthday">
+  <option value="1993">1993</option>
+  <option value="1994">1994</option>
+  <option value="1995">1995</option>
+  <option value="1996">1996</option>
+  <option value="1997">1997</option>
+  <option value="1998">1998</option>
+</select>
+<br>
+<br>
+<div>직업 입력</div>
+<select name="job">
+  <optgroup label="IT">
+    <option value="프론트엔드">프론트엔드</option>
+    <option value="컨설턴트">컨설턴트</option>
+    <option value="엔지니어">엔지니어</option>
+  </optgroup>
+</select>
+<!--select를 dropdown menu를 생성할 수 있게 해준다-->
+<!--optgroup은 select에 있는 항목들을 묶어서 그룹화해준다-->
+
+<br>
+<br>
+</form>
+
+<form name="credit card">
+</form>
+
+</body>
+
+</html>
